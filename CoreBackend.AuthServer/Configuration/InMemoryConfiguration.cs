@@ -49,7 +49,10 @@ RedirectUris就是登陆成功之后重定向的网址, 这个网址(http://loca
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         "socialnetwork"
-                    }
+                    },
+                    //修改Authorization Server的Client来允许返回Access Token
+                    //有些情况下不建议这么做
+                    AllowAccessTokensViaBrowser=true
                 }
             };
         }

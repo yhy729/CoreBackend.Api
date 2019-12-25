@@ -46,6 +46,8 @@ namespace CoreBackend.ApiClient
                 options.Authority = "http://localhost:5000";
                 options.RequireHttpsMetadata = false;
                 options.ClientId = "mvc_implicit";
+                //
+                options.ResponseType= "id_token token";
                 options.SaveTokens = true;
             });
         }
